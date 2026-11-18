@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="4">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Сотрудник" id="7">
+			<DataPath>Объект.Сотрудник</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="СотрудникКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="СотрудникТекущаяДолжность" id="35">
+			<DataPath>Объект.Сотрудник.ТекущаяДолжность</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СотрудникТекущаяДолжностьКонтекстноеМеню" id="36"/>
+			<ExtendedTooltip name="СотрудникТекущаяДолжностьРасширеннаяПодсказка" id="37"/>
+		</InputField>
+		<Table name="ПроверкаРезультатовРаботы" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Объект.ПроверкаРезультатовРаботы</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ПроверкаРезультатовРаботыКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ПроверкаРезультатовРаботыКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ПроверкаРезультатовРаботыРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ПроверкаРезультатовРаботыСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>ПроверкаРезультатовРаботы</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПроверкаРезультатовРаботыСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ПроверкаРезультатовРаботыСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ПроверкаРезультатовРаботыСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>ПроверкаРезультатовРаботы</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ПроверкаРезультатовРаботыСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ПроверкаРезультатовРаботыСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ПроверкаРезультатовРаботыУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>ПроверкаРезультатовРаботы</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ПроверкаРезультатовРаботыУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ПроверкаРезультатовРаботыУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ПроверкаРезультатовРаботыНомерСтроки" id="23">
+					<DataPath>Объект.ПроверкаРезультатовРаботы.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПроверкаРезультатовРаботыНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПроверкаРезультатовРаботыНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ПроверкаРезультатовРаботыСотрудник" id="26">
+					<DataPath>Объект.ПроверкаРезультатовРаботы.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПроверкаРезультатовРаботыСотрудникКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ПроверкаРезультатовРаботыСотрудникРасширеннаяПодсказка" id="28"/>
+					<Events>
+						<Event name="OnChange">ПроверкаРезультатовРаботыСотрудникПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ПроверкаРезультатовРаботыСотрудникТекущаяДолжность" id="32">
+					<DataPath>Объект.ПроверкаРезультатовРаботы.Сотрудник.ТекущаяДолжность</DataPath>
+					<ContextMenu name="ПроверкаРезультатовРаботыСотрудникТекущаяДолжностьКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ПроверкаРезультатовРаботыСотрудникТекущаяДолжностьРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ПроверкаРезультатовРаботыОценка" id="29">
+					<DataPath>Объект.ПроверкаРезультатовРаботы.Оценка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ПроверкаРезультатовРаботыОценкаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ПроверкаРезультатовРаботыОценкаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ОценкаРаботы</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

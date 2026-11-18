@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="БизнесПроцесс" id="10">
+			<DataPath>Объект.BusinessProcess</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="БизнесПроцессКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="БизнесПроцессРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="СведенияОПродаже" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о продаже</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о продаже</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="СведенияОПродажеРасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="БизнесПроцессКлиент" id="24">
+					<DataPath>Объект.BusinessProcess.Клиент</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БизнесПроцессКлиентКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="БизнесПроцессКлиентРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<InputField name="БизнесПроцессПожеланияВВыборе" id="27">
+					<DataPath>Объект.BusinessProcess.ПожеланияВВыборе</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БизнесПроцессПожеланияВВыбореКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="БизнесПроцессПожеланияВВыбореРасширеннаяПодсказка" id="29"/>
+				</InputField>
+				<CheckBoxField name="БизнесПроцессСогласовано" id="30">
+					<DataPath>Объект.BusinessProcess.Согласовано</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="БизнесПроцессСогласованоКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="БизнесПроцессСогласованоРасширеннаяПодсказка" id="32"/>
+				</CheckBoxField>
+				<CheckBoxField name="БизнесПроцессТоварыЕстьНаСкладе" id="33">
+					<DataPath>Объект.BusinessProcess.ТоварыЕстьНаСкладе</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="БизнесПроцессТоварыЕстьНаСкладеКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="БизнесПроцессТоварыЕстьНаСкладеРасширеннаяПодсказка" id="35"/>
+				</CheckBoxField>
+				<InputField name="БизнесПроцессИнформацияОПродаже" id="36">
+					<DataPath>Объект.BusinessProcess.ИнформацияОПродаже</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БизнесПроцессИнформацияОПродажеКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="БизнесПроцессИнформацияОПродажеРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="БизнесПроцессАктВыполненияРабот" id="39">
+					<DataPath>Объект.BusinessProcess.АктВыполненияРабот</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="БизнесПроцессАктВыполненияРаботКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="БизнесПроцессАктВыполненияРаботРасширеннаяПодсказка" id="41"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ТочкаМаршрута" id="13">
+			<DataPath>Объект.RoutePoint</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТочкаМаршрутаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ТочкаМаршрутаРасширеннаяПодсказка" id="15"/>
+		</InputField>
+		<InputField name="Номер" id="1">
+			<DataPath>Объект.Number</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<InputField name="Дата" id="7">
+			<DataPath>Объект.Date</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДатаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="Исполнитель" id="16">
+			<DataPath>Объект.Исполнитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИсполнительКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Должность" id="42">
+			<DataPath>Объект.Должность</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ДолжностьКонтекстноеМеню" id="43"/>
+			<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="44"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:TaskObject.ЗадачаИсполнителя</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>
